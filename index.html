@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 German Language MCQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function calculateScore(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let score = 0;
+            const answers = {
+                q1: 'B', // Correct answer: A. Ja
+                q2: 'C', // Correct answer: B. Hund
+                q3: 'C', // Correct answer: C. Apfel
+                q4: 'A', // Correct answer: D. Wie geht's?
+                q5: 'B'  // Correct answer: B. Guten Morgen
+            };
+
+            // Check answers
+            for (const [key, value] of Object.entries(answers)) {
+                const selectedAnswer = document.querySelector(`input[name="${key}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === value) {
+                    score++;
+                }
+            }
+
+            // Update the score display
+            document.getElementById('score').textContent = `Score: ${score}`;
+        }
+    </script>
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6">A1 German Language Multiple Choice Questions</h1>
+        <form onsubmit="calculateScore(event)">
+            <div class="mb-4">
+                <label class="block text-lg font-semibold mb-2">1. Was sagt man, wenn man um Hilfe bittet?</label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="A" class="mr-2">
+                        A. Ich habe keine Zeit
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="B" class="mr-2">
+                        B. Kannst du mir bitte helfen?
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="C" class="mr-2">
+                        C. Ich verstehe nicht
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="D" class="mr-2">
+                        D. Das ist interessant
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-lg font-semibold mb-2">2. Wie fragt man nach dem weg?</label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="A" class="mr-2">
+                        A. Wo ist das Buch?
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="B" class="mr-2">
+                        B.Wie spat ist es? 
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="C" class="mr-2">
+                        C. Konnen Sie mir bitte sagen, wo die Schule ist?
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="D" class="mr-2">
+                        D. Was essen wir heute
+                    </label>
+                </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="mb-4">
+                <label class="block text-lg font-semibold mb-2">3. Was bedeutet "Ich freue mich auf das Wochenende"?</label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="A" class="mr-2">
+                        A. Ich mag das Wochenende
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="B" class="mr-2">
+                        B. Ich bin mude am Wochenende.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="C" class="mr-2">
+                        C. Ich kann das Wochenende kaum erwarten.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="D" class="mr-2">
+                        D. Das Wochenende ist langweillig.
+                    </label>
+                </div>
+            </div>
+<!-- question 4 -->
+
+            <div class="mb-4">
+                <label class="block text-lg font-semibold mb-2">4. Wie lautet der Plural von "Auto"?</label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="A" class="mr-2">
+                        A. Autos.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="B" class="mr-2">
+                        B. Autoes.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="C" class="mr-2">
+                        C. Auto
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="D" class="mr-2">
+                        D. Autos'
+                    </label>
+                </div>
+            </div>
+<!-- question 5 -->
+            <div class="mb-4">
+                <label class="block text-lg font-semibold mb-2">5. Was ist eine wichtige Eigenschaft fur einen guten Freund?</label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="A" class="mr-2">
+                        A. Immer recht haben.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="B" class="mr-2">
+                        B. Verstandnis und Unterstutzung zeigen.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="C" class="mr-2">
+                        C. oft reisen.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="D" class="mr-2">
+                        D. Viel geld haven.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+        </form>
+
+        <div class="mt-6 text-lg font-semibold" id="score">Score: 0</div>
+    </div>
+</body>
+</html>
